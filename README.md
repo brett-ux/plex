@@ -1,5 +1,6 @@
 # Plex
 ```
+https://community-scripts.github.io/ProxmoxVE/scripts?id=plex&category=Media+%26+Streaming
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/plex.sh)"
 ```
 You need to claim the new server
