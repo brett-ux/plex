@@ -1,4 +1,4 @@
-# plex
+# Plex
 ```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/plex.sh)"
 ```
