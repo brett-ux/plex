@@ -11,3 +11,17 @@ https://account.plex.tv/claim
 add this in the lxc or docker container:
 curl -X POST "http://localhost:32400/myplex/claim?token=YOUR_CLAIM_TOKEN_HERE"
 ```
+## Mounting NAS on Proxmox host
+In the GUI, go to Datacenter section, then Storage, then Add
+ID: nas-media
+Server: 192.168.5.22
+Export: /mnt/NAS/Storage01
+### Mounting on Container Host
+```
+nano /etc/pve/lxc/<CTID>.conf
+```
+
+Add this to the end of the Config File
+```
+mp0: /mnt/media,mp=/mnt/media
+```
