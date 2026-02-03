@@ -23,5 +23,5 @@ nano /etc/pve/lxc/<CTID>.conf
 
 Add this to the end of the Config File
 ```
-mp0: /mnt/media,mp=/mnt/media
+mp0: /mnt/pve/nas-media,mp=/mnt/media,ro=1
 ```
