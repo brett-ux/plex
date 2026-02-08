@@ -25,3 +25,26 @@ Add this to the end of the Config File
 ```
 mp0: /mnt/pve/nas-media,mp=/mnt/media,ro=1
 ```
+
+
+## Debian LXC Install
+Download from Plex website
+```
+https://www.plex.tv/media-server-downloads/?cat=computer&plat=linux
+```
+
+```
+cd /tmp
+wget https://downloads.plex.tv/plex-media-server-new/1.42.2.10156-f737b826c/debian/plexmediaserver_1.42.2.10156-f737b826c_amd64.deb
+
+```
+
+```
+apt install ./plexmediaserver_1.42.2.10156-f737b826c_amd64.deb
+```
+
+```
+systemctl enable plexmediaserver
+systemctl start plexmediaserver
+systemctl status plexmediaserver
+```
