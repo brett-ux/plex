@@ -28,6 +28,12 @@ mp0: /mnt/pve/nas-media,mp=/mnt/media,ro=1
 
 
 ## Debian LXC Install
+Add Repos
+```
+deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware
+deb http://security.debian.org/debian-security bookworm-security main contrib non-free non-free-firmware
+```
 Download from Plex website
 ```
 https://www.plex.tv/media-server-downloads/?cat=computer&plat=linux
